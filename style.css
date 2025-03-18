@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #FFF8DC; 
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #8B4513; 
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #FFD700; 
+    outline: 2px solid #FFD700;
+}
+.me {
+    padding: 6rem 2rem 4rem;
+    text-align: center;
+    background-color: #F5F5DC; 
+}
+
+.me h2 {
+    font-size: 2.5rem;
+    color: #8B4513;
+    margin-bottom: 1rem;
+}
+
+.me img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #8B4513;
+    object-fit: cover;
+}
+.intro {
+    padding: 2rem;
+    text-align: center;
+    background-color: #FFF8DC;
+}
+
+.intro p {
+    max-width: 600px;
+    margin: 0 auto 1rem;
+}
+
+.cta {
+    display: inline-block;
+    background-color: #D2691E; 
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta:hover,
+.cta:focus {
+    background-color: #8B4513;
+    outline: 2px solid #FFD700;
+}
+.about {
+    padding: 4rem 2rem;
+    background-color: #F5F5DC;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-photo {
+    flex: 1;
+    max-width: 300px;
+    margin: 1rem;
+}
+
+.about-photo img {
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex: 2;
+    margin: 1rem;
+}
+
+.about-text h2,
+.about-text h3 {
+    color: #8B4513;
+    margin-bottom: 1rem;
+}
+
+.about-text ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+.recipe {
+    padding: 4rem 2rem;
+    background-color: #FFF8DC;
+}
+
+.recipe h2 {
+    color: #8B4513;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.recipe img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto 2rem;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.recipe h3 {
+    color: #D2691E;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.recipe ul {
+    list-style-type: square;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.recipe ol {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+footer {
+    background-color: #8B4513;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0.5rem 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #FFD700;
+    outline: 2px solid #FFD700;
+}
+html {
+    scroll-behavior: smooth;
+}
+section[id] {
+    scroll-margin-top: 60px;
+}
+
+main {
+    padding-top: 60px; 
+}
+section {
+    padding: 5rem 2rem 2rem; 
+    min-height: 100vh; 
+    opacity: 1;
+    transition: opacity 0.5s ease; 
+}
+
+#home {
+    opacity: 1; 
+}
+
+section:target {
+    opacity: 1; 
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0.5rem;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .me {
+        padding: 5rem 1rem 2rem;
+    }
+
+    .me h2 {
+        font-size: 1.8rem;
+    }
+
+    .me img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-photo {
+        max-width: 100%;
+    }
+
+    .recipe {
+        padding: 3rem 1rem;
+    }
+}
