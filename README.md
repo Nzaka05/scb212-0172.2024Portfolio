@@ -36,7 +36,7 @@ This portfolio website is a reflection of my journey as an upcoming web develope
 ## How to Use
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/Nzaka05/your-repo-name.git
+   git clone https://github.com/Nzaka05/scb212-0172.2024Portfolio.git
   Contacts
   Email: nzakagideon05@gmail.com
 
